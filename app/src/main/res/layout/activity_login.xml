@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="245dp"
+        android:layout_height="23dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Masukkan Nomor Handphone "
+        android:textAlignment="textStart"
+        android:textColor="#2A5C99"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="182dp"
+        android:layout_height="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Selamat datang di Jago IT"
+        android:textAlignment="center"
+        android:textColor="#2A5C99"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="114dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="178dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2A5C99"
+        android:text="Lanjut"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="285dp"
+        android:layout_height="41dp"
+        android:background="@drawable/rectangle"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <View
+        android:layout_width="47dp"
+        android:layout_height="41dp"
+        android:background="@drawable/flag"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+62"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.myapplication.ui.notifications;
+package com.example.jagoit.ui.notifications;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.myapplication.databinding.FragmentNotificationsBinding;
+import com.example.jagoit.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
 
