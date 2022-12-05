@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginActivity extends AppCompatActivity {
 
+<<<<<<< Updated upstream
     private ActivityLoginBinding binding;
 
     PhoneAuthProvider.ForceResendingToken token;
@@ -31,6 +32,8 @@ public class LoginActivity extends AppCompatActivity {
 
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBacks;
 
+=======
+>>>>>>> Stashed changes
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
