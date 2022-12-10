@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 
 public class LoginActivity extends AppCompatActivity {
 
-<<<<<<< Updated upstream
     private ActivityLoginBinding binding;
 
     PhoneAuthProvider.ForceResendingToken token;
@@ -32,8 +31,6 @@ public class LoginActivity extends AppCompatActivity {
 
     PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallBacks;
 
-=======
->>>>>>> Stashed changes
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -90,12 +87,9 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onCodeSent(@NonNull String s, @NonNull PhoneAuthProvider.ForceResendingToken forceResendingToken) {
                 super.onCodeSent(s, forceResendingToken);
-                binding.buttonLanjut.setVisibility(View.GONE);
-                binding.progressBar.setVisibility(View.GONE);
+                binding.progressBar.setVisibility(View.INVISIBLE);
                 Constants.VERRIFICATION_OTP_ID = s;
                 token = forceResendingToken;
-                Log.d("TEST", "Berhasil kirim");
-                Log.d("TEST", "Data: " + s);
 
                 startActivity(new Intent(getApplicationContext(), VerifyOTP.class));
             }
@@ -110,35 +104,6 @@ public class LoginActivity extends AppCompatActivity {
                         .build();
         PhoneAuthProvider.verifyPhoneNumber(options);
 
-//        Log.d("TEST", "Phone: " + phoneNum);
-
-//        PhoneAuthProvider.getInstance().verifyPhoneNumber(phoneNum, 60L,
-//                TimeUnit.SECONDS, this, new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
-//
-//                    @Override
-//                    public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
-//                        super.onCodeSent(s, forceResendingToken);
-//                        binding.buttonLanjut.setVisibility(View.GONE);
-//                        binding.progressBar.setVisibility(View.GONE);
-//                        Constants.VERRIFICATION_OTP_ID = s;
-//                        token = forceResendingToken;
-//
-//                        startActivity(new Intent(getApplicationContext(), VerifyOTP.class));
-//                    }
-//
-//                    @Override
-//                    public void onVerificationCompleted(@NonNull PhoneAuthCredential phoneAuthCredential) {
-//
-//                    }
-//
-//                    @Override
-//                    public void onVerificationFailed(@NonNull FirebaseException e) {
-//                        Log.d("TEST", "Error: " + e);
-//                        showToast("Failed Verify OTP");
-//                        binding.buttonLanjut.setVisibility(View.VISIBLE);
-//                        binding.progressBar.setVisibility(View.INVISIBLE);
-//                    }
-//                });
     }
 
 
